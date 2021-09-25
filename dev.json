@@ -1,0 +1,9 @@
+{
+	"stage": [{
+		"version": "1.2.3.4",
+		"host": "192.0.0.0",
+		"group": "XX",
+		"Extra_value": "hi",
+		"ENV": "Dev"
+	}]
+}
