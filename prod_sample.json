@@ -1,0 +1,28 @@
+{
+	"parameters": {
+		"workstream": "JENKINS",
+		"errornotfication": "abc@gmail.com",
+		"env": "prod"
+	},
+	"stages": [{
+			"stagename": "deploy to prod",
+			"stageType": "autoDeployment",
+			"ID": "123",
+			"jobTags": "deploytojar",
+			"extraVars": {
+				"user": "java",
+				"artifactid": "abc.apiname",
+				"groupid": "com.abc",
+				"host": "127.0.0.1",
+				"repo": "release",
+				"Extra_opt": "--spring.active.profile=prod",
+				"java_opt": [
+					"-xms1048m -xms512m"
+				]
+
+			}
+		}
+
+	]
+
+}
